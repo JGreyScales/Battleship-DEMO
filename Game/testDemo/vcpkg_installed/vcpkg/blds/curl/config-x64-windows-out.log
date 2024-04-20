@@ -1,0 +1,438 @@
+[1/2] "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E chdir ".." "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "D:/Programming/Battleship/Game/testDemo/vcpkg_installed/vcpkg/blds/curl/src/curl-8_2_1-1a1f01a28f.clean" "-G" "Ninja" "-DCMAKE_BUILD_TYPE=Release" "-DCMAKE_INSTALL_PREFIX=D:/Programming/Battleship/Game/testDemo/vcpkg_installed/vcpkg/pkgs/curl_x64-windows" "-DFETCHCONTENT_FULLY_DISCONNECTED=ON" "-DCMAKE_PROJECT_INCLUDE=C:/Users/JG/AppData/Local/vcpkg/registries/git-trees/1e4df4c9590fb15d2d73014c66dbbc151b624b9b/cmake-project-include.cmake" "-DUSE_NGHTTP2=OFF" "-DCURL_USE_WOLFSSL=OFF" "-DCURL_USE_OPENSSL=OFF" "-DCURL_USE_MBEDTLS=OFF" "-DCURL_USE_LIBSSH2=OFF" "-DBUILD_CURL_EXE=OFF" "-DENABLE_ARES=OFF" "-DCURL_WINDOWS_SSPI=ON" "-DCURL_BROTLI=OFF" "-DCURL_USE_SCHANNEL=ON" "-DCURL_USE_SECTRANSP=OFF" "-DUSE_LIBIDN2=OFF" "-DUSE_WIN32_IDN=OFF" "-DUSE_WIN32_LDAP=OFF" "-DENABLE_WEBSOCKETS=OFF" "-DCURL_ZSTD=OFF" "-DHTTP_ONLY=OFF" "-DCURL_DISABLE_LDAP=ON" "-DENABLE_UNICODE=ON" "-DBUILD_TESTING=OFF" "-DENABLE_MANUAL=OFF" "-DCURL_CA_FALLBACK=ON" "-DCURL_USE_LIBPSL=OFF" "-DCMAKE_DISABLE_FIND_PACKAGE_Perl=ON" "-DCMAKE_MAKE_PROGRAM=C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" "-DBUILD_SHARED_LIBS=ON" "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake" "-DVCPKG_TARGET_TRIPLET=x64-windows" "-DVCPKG_SET_CHARSET_FLAG=ON" "-DVCPKG_PLATFORM_TOOLSET=v143" "-DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_SYSTEM_PACKAGE_REGISTRY=ON" "-DCMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=TRUE" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DVCPKG_APPLOCAL_DEPS=OFF" "-DCMAKE_TOOLCHAIN_FILE=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake" "-DCMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION=ON" "-DVCPKG_CXX_FLAGS=" "-DVCPKG_CXX_FLAGS_RELEASE=" "-DVCPKG_CXX_FLAGS_DEBUG=" "-DVCPKG_C_FLAGS=" "-DVCPKG_C_FLAGS_RELEASE=" "-DVCPKG_C_FLAGS_DEBUG=" "-DVCPKG_CRT_LINKAGE=dynamic" "-DVCPKG_LINKER_FLAGS=" "-DVCPKG_LINKER_FLAGS_RELEASE=" "-DVCPKG_LINKER_FLAGS_DEBUG=" "-DVCPKG_TARGET_ARCHITECTURE=x64" "-DCMAKE_INSTALL_LIBDIR:STRING=lib" "-DCMAKE_INSTALL_BINDIR:STRING=bin" "-D_VCPKG_ROOT_DIR=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg" "-D_VCPKG_INSTALLED_DIR=D:/Programming/Battleship/Game/testDemo/vcpkg_installed" "-DVCPKG_MANIFEST_INSTALL=OFF"
+-- The C compiler identification is MSVC 19.38.33135.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- curl version=[8.2.1-DEV]
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE  
+-- Looking for getch in ws2_32;
+-- Looking for getch in ws2_32; - found
+-- Looking for getch in winmm;ws2_32
+-- Looking for getch in winmm;ws2_32 - found
+-- Found ZLIB: optimized;D:/Programming/Battleship/Game/testDemo/vcpkg_installed/x64-windows/lib/zlib.lib;debug;D:/Programming/Battleship/Game/testDemo/vcpkg_installed/x64-windows/debug/lib/zlibd.lib (found version "1.3.0")  
+-- LDAP needs to be enabled to support LDAPS
+-- Looking for include file windows.h
+-- Looking for include file windows.h - found
+-- Looking for include files windows.h, ws2tcpip.h
+-- Looking for include files windows.h, ws2tcpip.h - found
+-- Looking for 3 include files windows.h, ..., winsock2.h
+-- Looking for 3 include files windows.h, ..., winsock2.h - found
+-- Looking for 4 include files windows.h, ..., wincrypt.h
+-- Looking for 4 include files windows.h, ..., wincrypt.h - found
+-- Looking for 5 include files windows.h, ..., inttypes.h
+-- Looking for 5 include files windows.h, ..., inttypes.h - found
+-- Looking for 6 include files windows.h, ..., sys/filio.h
+-- Looking for 6 include files windows.h, ..., sys/filio.h - not found
+-- Looking for 6 include files windows.h, ..., sys/ioctl.h
+-- Looking for 6 include files windows.h, ..., sys/ioctl.h - not found
+-- Looking for 6 include files windows.h, ..., sys/resource.h
+-- Looking for 6 include files windows.h, ..., sys/resource.h - not found
+-- Looking for 8 include files windows.h, ..., sys/un.h
+-- Looking for 8 include files windows.h, ..., sys/un.h - not found
+-- Looking for 9 include files windows.h, ..., sys/xattr.h
+-- Looking for 9 include files windows.h, ..., sys/xattr.h - not found
+-- Looking for 9 include files windows.h, ..., arpa/tftp.h
+-- Looking for 9 include files windows.h, ..., arpa/tftp.h - not found
+-- Looking for 10 include files windows.h, ..., idn2.h
+-- Looking for 10 include files windows.h, ..., idn2.h - not found
+-- Looking for 10 include files windows.h, ..., ifaddrs.h
+-- Looking for 10 include files windows.h, ..., ifaddrs.h - not found
+-- Looking for 11 include files windows.h, ..., libgen.h
+-- Looking for 11 include files windows.h, ..., libgen.h - not found
+-- Looking for 11 include files windows.h, ..., locale.h
+-- Looking for 11 include files windows.h, ..., locale.h - found
+-- Looking for 12 include files windows.h, ..., netinet/tcp.h
+-- Looking for 12 include files windows.h, ..., netinet/tcp.h - not found
+-- Looking for linux/tcp.h
+-- Looking for linux/tcp.h - not found
+-- Looking for 12 include files windows.h, ..., poll.h
+-- Looking for 12 include files windows.h, ..., poll.h - not found
+-- Looking for 14 include files windows.h, ..., ssl.h
+-- Looking for 14 include files windows.h, ..., ssl.h - not found
+-- Looking for 14 include files windows.h, ..., stdatomic.h
+-- Looking for 14 include files windows.h, ..., stdatomic.h - not found
+-- Looking for 14 include files windows.h, ..., stdbool.h
+-- Looking for 14 include files windows.h, ..., stdbool.h - found
+-- Looking for 15 include files windows.h, ..., stdint.h
+-- Looking for 15 include files windows.h, ..., stdint.h - found
+-- Looking for 18 include files windows.h, ..., stropts.h
+-- Looking for 18 include files windows.h, ..., stropts.h - not found
+-- Looking for 19 include files windows.h, ..., unistd.h
+-- Looking for 19 include files windows.h, ..., unistd.h - not found
+-- Looking for 19 include files windows.h, ..., stddef.h
+-- Looking for 19 include files windows.h, ..., stddef.h - found
+-- Looking for 20 include files windows.h, ..., sys/utsname.h
+-- Looking for 20 include files windows.h, ..., sys/utsname.h - not found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of ssize_t
+-- Check size of ssize_t - failed
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of __int64
+-- Check size of __int64 - done
+-- Check size of time_t
+-- Check size of time_t - done
+-- Looking for fchmod
+-- Looking for fchmod - not found
+-- Looking for basename
+-- Looking for basename - not found
+-- Looking for socketpair
+-- Looking for socketpair - not found
+-- Looking for recv
+-- Looking for recv - found
+-- Looking for send
+-- Looking for send - found
+-- Looking for sendmsg
+-- Looking for sendmsg - not found
+-- Looking for strtok_r
+-- Looking for strtok_r - not found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - not found
+-- Looking for alarm
+-- Looking for alarm - not found
+-- Looking for getppid
+-- Looking for getppid - not found
+-- Looking for utimes
+-- Looking for utimes - not found
+-- Looking for getpwuid_r
+-- Looking for getpwuid_r - not found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strerror_r
+-- Looking for strerror_r - not found
+-- Looking for siginterrupt
+-- Looking for siginterrupt - not found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for freeaddrinfo
+-- Looking for freeaddrinfo - found
+-- Looking for pipe
+-- Looking for pipe - not found
+-- Looking for ftruncate
+-- Looking for ftruncate - not found
+-- Looking for getpeername
+-- Looking for getpeername - found
+-- Looking for getsockname
+-- Looking for getsockname - found
+-- Looking for if_nametoindex
+-- Looking for if_nametoindex - not found
+-- Looking for getrlimit
+-- Looking for getrlimit - not found
+-- Looking for setlocale
+-- Looking for setlocale - found
+-- Looking for setmode
+-- Looking for setmode - found
+-- Looking for setrlimit
+-- Looking for setrlimit - not found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for mach_absolute_time
+-- Looking for mach_absolute_time - not found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Looking for inet_pton
+-- Looking for inet_pton - found
+-- Looking for fsetxattr
+-- Looking for fsetxattr - not found
+-- Check size of sa_family_t
+-- Check size of sa_family_t - failed
+-- Check size of ADDRESS_FAMILY
+-- Check size of ADDRESS_FAMILY - failed
+-- Performing Curl Test HAVE_FCNTL_O_NONBLOCK
+-- Performing Curl Test HAVE_FCNTL_O_NONBLOCK - Failed
+-- Performing Curl Test HAVE_IOCTLSOCKET
+-- Performing Curl Test HAVE_IOCTLSOCKET - Success
+-- Performing Curl Test HAVE_IOCTLSOCKET_CAMEL
+-- Performing Curl Test HAVE_IOCTLSOCKET_CAMEL - Failed
+-- Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO
+-- Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO - Failed
+-- Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO
+-- Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO - Success
+-- Performing Curl Test HAVE_IOCTL_FIONBIO
+-- Performing Curl Test HAVE_IOCTL_FIONBIO - Failed
+-- Performing Curl Test HAVE_IOCTL_SIOCGIFADDR
+-- Performing Curl Test HAVE_IOCTL_SIOCGIFADDR - Failed
+-- Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK
+-- Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK - Failed
+-- Performing Curl Test HAVE_BOOL_T
+-- Performing Curl Test HAVE_BOOL_T - Success
+-- Performing Curl Test HAVE_FILE_OFFSET_BITS
+-- Performing Curl Test HAVE_FILE_OFFSET_BITS - Failed
+-- Performing Curl Test HAVE_VARIADIC_MACROS_C99
+-- Performing Curl Test HAVE_VARIADIC_MACROS_C99 - Success
+-- Performing Curl Test HAVE_VARIADIC_MACROS_GCC
+-- Performing Curl Test HAVE_VARIADIC_MACROS_GCC - Failed
+-- Performing Curl Test HAVE_ATOMIC
+-- Performing Curl Test HAVE_ATOMIC - Failed
+-- Check size of off_t
+-- Check size of off_t - done
+-- Check size of curl_off_t
+-- Check size of curl_off_t - done
+-- Check size of curl_socket_t
+-- Check size of curl_socket_t - failed
+-- Performing Curl Test HAVE_WIN32_WINNT
+-- Performing Curl Test HAVE_WIN32_WINNT - Success
+-- Found _WIN32_WINNT=0x0A00
+-- Performing Curl Test HAVE_GLIBC_STRERROR_R
+-- Performing Curl Test HAVE_GLIBC_STRERROR_R - Failed
+-- Performing Curl Test HAVE_POSIX_STRERROR_R
+-- Performing Curl Test HAVE_POSIX_STRERROR_R - Failed
+-- Performing Curl Test HAVE_CLOCK_GETTIME_MONOTONIC
+-- Performing Curl Test HAVE_CLOCK_GETTIME_MONOTONIC - Failed
+-- Performing Curl Test HAVE_BUILTIN_AVAILABLE
+-- Performing Curl Test HAVE_BUILTIN_AVAILABLE - Failed
+-- Performing Test HAVE_MSG_NOSIGNAL
+-- Performing Test HAVE_MSG_NOSIGNAL - Failed
+-- Performing Test HAVE_STRUCT_TIMEVAL
+-- Performing Test HAVE_STRUCT_TIMEVAL - Success
+-- Check size of struct sockaddr_storage
+-- Check size of struct sockaddr_storage - done
+-- Performing Test HAVE_POLL_FINE
+-- Performing Test HAVE_POLL_FINE - Failed
+-- Looking for CryptAcquireContext
+-- Looking for CryptAcquireContext - found
+-- Enabled features: SSL IPv6 unixsockets libz AsynchDNS Largefile SSPI alt-svc HSTS SPNEGO Kerberos NTLM HTTPS-proxy unicode threadsafe
+-- Enabled protocols: DICT FILE FTP FTPS GOPHER GOPHERS HTTP HTTPS IMAP IMAPS MQTT POP3 POP3S RTSP SMB SMBS SMTP SMTPS TELNET TFTP
+-- Enabled SSL backends: Schannel
+-- Configuring done (45.3s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    FETCHCONTENT_FULLY_DISCONNECTED
+    _VCPKG_ROOT_DIR
+
+
+-- Build files have been written to: D:/Programming/Battleship/Game/testDemo/vcpkg_installed/vcpkg/blds/curl/x64-windows-rel
+[2/2] "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E chdir "../../x64-windows-dbg" "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "D:/Programming/Battleship/Game/testDemo/vcpkg_installed/vcpkg/blds/curl/src/curl-8_2_1-1a1f01a28f.clean" "-G" "Ninja" "-DCMAKE_BUILD_TYPE=Debug" "-DCMAKE_INSTALL_PREFIX=D:/Programming/Battleship/Game/testDemo/vcpkg_installed/vcpkg/pkgs/curl_x64-windows/debug" "-DFETCHCONTENT_FULLY_DISCONNECTED=ON" "-DCMAKE_PROJECT_INCLUDE=C:/Users/JG/AppData/Local/vcpkg/registries/git-trees/1e4df4c9590fb15d2d73014c66dbbc151b624b9b/cmake-project-include.cmake" "-DUSE_NGHTTP2=OFF" "-DCURL_USE_WOLFSSL=OFF" "-DCURL_USE_OPENSSL=OFF" "-DCURL_USE_MBEDTLS=OFF" "-DCURL_USE_LIBSSH2=OFF" "-DBUILD_CURL_EXE=OFF" "-DENABLE_ARES=OFF" "-DCURL_WINDOWS_SSPI=ON" "-DCURL_BROTLI=OFF" "-DCURL_USE_SCHANNEL=ON" "-DCURL_USE_SECTRANSP=OFF" "-DUSE_LIBIDN2=OFF" "-DUSE_WIN32_IDN=OFF" "-DUSE_WIN32_LDAP=OFF" "-DENABLE_WEBSOCKETS=OFF" "-DCURL_ZSTD=OFF" "-DHTTP_ONLY=OFF" "-DCURL_DISABLE_LDAP=ON" "-DENABLE_UNICODE=ON" "-DBUILD_TESTING=OFF" "-DENABLE_MANUAL=OFF" "-DCURL_CA_FALLBACK=ON" "-DCURL_USE_LIBPSL=OFF" "-DCMAKE_DISABLE_FIND_PACKAGE_Perl=ON" "-DCMAKE_MAKE_PROGRAM=C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" "-DBUILD_SHARED_LIBS=ON" "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake" "-DVCPKG_TARGET_TRIPLET=x64-windows" "-DVCPKG_SET_CHARSET_FLAG=ON" "-DVCPKG_PLATFORM_TOOLSET=v143" "-DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_SYSTEM_PACKAGE_REGISTRY=ON" "-DCMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=TRUE" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DVCPKG_APPLOCAL_DEPS=OFF" "-DCMAKE_TOOLCHAIN_FILE=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake" "-DCMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION=ON" "-DVCPKG_CXX_FLAGS=" "-DVCPKG_CXX_FLAGS_RELEASE=" "-DVCPKG_CXX_FLAGS_DEBUG=" "-DVCPKG_C_FLAGS=" "-DVCPKG_C_FLAGS_RELEASE=" "-DVCPKG_C_FLAGS_DEBUG=" "-DVCPKG_CRT_LINKAGE=dynamic" "-DVCPKG_LINKER_FLAGS=" "-DVCPKG_LINKER_FLAGS_RELEASE=" "-DVCPKG_LINKER_FLAGS_DEBUG=" "-DVCPKG_TARGET_ARCHITECTURE=x64" "-DCMAKE_INSTALL_LIBDIR:STRING=lib" "-DCMAKE_INSTALL_BINDIR:STRING=bin" "-D_VCPKG_ROOT_DIR=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg" "-D_VCPKG_INSTALLED_DIR=D:/Programming/Battleship/Game/testDemo/vcpkg_installed" "-DVCPKG_MANIFEST_INSTALL=OFF" "-DENABLE_DEBUG=ON"
+-- The C compiler identification is MSVC 19.38.33135.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- curl version=[8.2.1-DEV]
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE  
+-- Looking for getch in ws2_32;
+-- Looking for getch in ws2_32; - found
+-- Looking for getch in winmm;ws2_32
+-- Looking for getch in winmm;ws2_32 - found
+-- Found ZLIB: optimized;D:/Programming/Battleship/Game/testDemo/vcpkg_installed/x64-windows/lib/zlib.lib;debug;D:/Programming/Battleship/Game/testDemo/vcpkg_installed/x64-windows/debug/lib/zlibd.lib (found version "1.3.0")  
+-- LDAP needs to be enabled to support LDAPS
+-- Looking for include file windows.h
+-- Looking for include file windows.h - found
+-- Looking for include files windows.h, ws2tcpip.h
+-- Looking for include files windows.h, ws2tcpip.h - found
+-- Looking for 3 include files windows.h, ..., winsock2.h
+-- Looking for 3 include files windows.h, ..., winsock2.h - found
+-- Looking for 4 include files windows.h, ..., wincrypt.h
+-- Looking for 4 include files windows.h, ..., wincrypt.h - found
+-- Looking for 5 include files windows.h, ..., inttypes.h
+-- Looking for 5 include files windows.h, ..., inttypes.h - found
+-- Looking for 6 include files windows.h, ..., sys/filio.h
+-- Looking for 6 include files windows.h, ..., sys/filio.h - not found
+-- Looking for 6 include files windows.h, ..., sys/ioctl.h
+-- Looking for 6 include files windows.h, ..., sys/ioctl.h - not found
+-- Looking for 6 include files windows.h, ..., sys/resource.h
+-- Looking for 6 include files windows.h, ..., sys/resource.h - not found
+-- Looking for 8 include files windows.h, ..., sys/un.h
+-- Looking for 8 include files windows.h, ..., sys/un.h - not found
+-- Looking for 9 include files windows.h, ..., sys/xattr.h
+-- Looking for 9 include files windows.h, ..., sys/xattr.h - not found
+-- Looking for 9 include files windows.h, ..., arpa/tftp.h
+-- Looking for 9 include files windows.h, ..., arpa/tftp.h - not found
+-- Looking for 10 include files windows.h, ..., idn2.h
+-- Looking for 10 include files windows.h, ..., idn2.h - not found
+-- Looking for 10 include files windows.h, ..., ifaddrs.h
+-- Looking for 10 include files windows.h, ..., ifaddrs.h - not found
+-- Looking for 11 include files windows.h, ..., libgen.h
+-- Looking for 11 include files windows.h, ..., libgen.h - not found
+-- Looking for 11 include files windows.h, ..., locale.h
+-- Looking for 11 include files windows.h, ..., locale.h - found
+-- Looking for 12 include files windows.h, ..., netinet/tcp.h
+-- Looking for 12 include files windows.h, ..., netinet/tcp.h - not found
+-- Looking for linux/tcp.h
+-- Looking for linux/tcp.h - not found
+-- Looking for 12 include files windows.h, ..., poll.h
+-- Looking for 12 include files windows.h, ..., poll.h - not found
+-- Looking for 14 include files windows.h, ..., ssl.h
+-- Looking for 14 include files windows.h, ..., ssl.h - not found
+-- Looking for 14 include files windows.h, ..., stdatomic.h
+-- Looking for 14 include files windows.h, ..., stdatomic.h - not found
+-- Looking for 14 include files windows.h, ..., stdbool.h
+-- Looking for 14 include files windows.h, ..., stdbool.h - found
+-- Looking for 15 include files windows.h, ..., stdint.h
+-- Looking for 15 include files windows.h, ..., stdint.h - found
+-- Looking for 18 include files windows.h, ..., stropts.h
+-- Looking for 18 include files windows.h, ..., stropts.h - not found
+-- Looking for 19 include files windows.h, ..., unistd.h
+-- Looking for 19 include files windows.h, ..., unistd.h - not found
+-- Looking for 19 include files windows.h, ..., stddef.h
+-- Looking for 19 include files windows.h, ..., stddef.h - found
+-- Looking for 20 include files windows.h, ..., sys/utsname.h
+-- Looking for 20 include files windows.h, ..., sys/utsname.h - not found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of ssize_t
+-- Check size of ssize_t - failed
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of __int64
+-- Check size of __int64 - done
+-- Check size of time_t
+-- Check size of time_t - done
+-- Looking for fchmod
+-- Looking for fchmod - not found
+-- Looking for basename
+-- Looking for basename - not found
+-- Looking for socketpair
+-- Looking for socketpair - not found
+-- Looking for recv
+-- Looking for recv - found
+-- Looking for send
+-- Looking for send - found
+-- Looking for sendmsg
+-- Looking for sendmsg - not found
+-- Looking for strtok_r
+-- Looking for strtok_r - not found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - not found
+-- Looking for alarm
+-- Looking for alarm - not found
+-- Looking for getppid
+-- Looking for getppid - not found
+-- Looking for utimes
+-- Looking for utimes - not found
+-- Looking for getpwuid_r
+-- Looking for getpwuid_r - not found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strerror_r
+-- Looking for strerror_r - not found
+-- Looking for siginterrupt
+-- Looking for siginterrupt - not found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for freeaddrinfo
+-- Looking for freeaddrinfo - found
+-- Looking for pipe
+-- Looking for pipe - not found
+-- Looking for ftruncate
+-- Looking for ftruncate - not found
+-- Looking for getpeername
+-- Looking for getpeername - found
+-- Looking for getsockname
+-- Looking for getsockname - found
+-- Looking for if_nametoindex
+-- Looking for if_nametoindex - not found
+-- Looking for getrlimit
+-- Looking for getrlimit - not found
+-- Looking for setlocale
+-- Looking for setlocale - found
+-- Looking for setmode
+-- Looking for setmode - found
+-- Looking for setrlimit
+-- Looking for setrlimit - not found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for mach_absolute_time
+-- Looking for mach_absolute_time - not found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Looking for inet_pton
+-- Looking for inet_pton - found
+-- Looking for fsetxattr
+-- Looking for fsetxattr - not found
+-- Check size of sa_family_t
+-- Check size of sa_family_t - failed
+-- Check size of ADDRESS_FAMILY
+-- Check size of ADDRESS_FAMILY - failed
+-- Performing Curl Test HAVE_FCNTL_O_NONBLOCK
+-- Performing Curl Test HAVE_FCNTL_O_NONBLOCK - Failed
+-- Performing Curl Test HAVE_IOCTLSOCKET
+-- Performing Curl Test HAVE_IOCTLSOCKET - Success
+-- Performing Curl Test HAVE_IOCTLSOCKET_CAMEL
+-- Performing Curl Test HAVE_IOCTLSOCKET_CAMEL - Failed
+-- Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO
+-- Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO - Failed
+-- Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO
+-- Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO - Success
+-- Performing Curl Test HAVE_IOCTL_FIONBIO
+-- Performing Curl Test HAVE_IOCTL_FIONBIO - Failed
+-- Performing Curl Test HAVE_IOCTL_SIOCGIFADDR
+-- Performing Curl Test HAVE_IOCTL_SIOCGIFADDR - Failed
+-- Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK
+-- Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK - Failed
+-- Performing Curl Test HAVE_BOOL_T
+-- Performing Curl Test HAVE_BOOL_T - Success
+-- Performing Curl Test HAVE_FILE_OFFSET_BITS
+-- Performing Curl Test HAVE_FILE_OFFSET_BITS - Failed
+-- Performing Curl Test HAVE_VARIADIC_MACROS_C99
+-- Performing Curl Test HAVE_VARIADIC_MACROS_C99 - Success
+-- Performing Curl Test HAVE_VARIADIC_MACROS_GCC
+-- Performing Curl Test HAVE_VARIADIC_MACROS_GCC - Failed
+-- Performing Curl Test HAVE_ATOMIC
+-- Performing Curl Test HAVE_ATOMIC - Failed
+-- Check size of off_t
+-- Check size of off_t - done
+-- Check size of curl_off_t
+-- Check size of curl_off_t - done
+-- Check size of curl_socket_t
+-- Check size of curl_socket_t - failed
+-- Performing Curl Test HAVE_WIN32_WINNT
+-- Performing Curl Test HAVE_WIN32_WINNT - Success
+-- Found _WIN32_WINNT=0x0A00
+-- Performing Curl Test HAVE_GLIBC_STRERROR_R
+-- Performing Curl Test HAVE_GLIBC_STRERROR_R - Failed
+-- Performing Curl Test HAVE_POSIX_STRERROR_R
+-- Performing Curl Test HAVE_POSIX_STRERROR_R - Failed
+-- Performing Curl Test HAVE_CLOCK_GETTIME_MONOTONIC
+-- Performing Curl Test HAVE_CLOCK_GETTIME_MONOTONIC - Failed
+-- Performing Curl Test HAVE_BUILTIN_AVAILABLE
+-- Performing Curl Test HAVE_BUILTIN_AVAILABLE - Failed
+-- Performing Test HAVE_MSG_NOSIGNAL
+-- Performing Test HAVE_MSG_NOSIGNAL - Failed
+-- Performing Test HAVE_STRUCT_TIMEVAL
+-- Performing Test HAVE_STRUCT_TIMEVAL - Success
+-- Check size of struct sockaddr_storage
+-- Check size of struct sockaddr_storage - done
+-- Performing Test HAVE_POLL_FINE
+-- Performing Test HAVE_POLL_FINE - Failed
+-- Looking for CryptAcquireContext
+-- Looking for CryptAcquireContext - found
+-- Enabled features: SSL IPv6 unixsockets libz AsynchDNS Largefile SSPI alt-svc HSTS SPNEGO Kerberos NTLM HTTPS-proxy unicode threadsafe
+-- Enabled protocols: DICT FILE FTP FTPS GOPHER GOPHERS HTTP HTTPS IMAP IMAPS MQTT POP3 POP3S RTSP SMB SMBS SMTP SMTPS TELNET TFTP
+-- Enabled SSL backends: Schannel
+-- Configuring done (45.3s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    FETCHCONTENT_FULLY_DISCONNECTED
+    _VCPKG_ROOT_DIR
+
+
+-- Build files have been written to: D:/Programming/Battleship/Game/testDemo/vcpkg_installed/vcpkg/blds/curl/x64-windows-dbg

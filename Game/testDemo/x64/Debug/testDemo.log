@@ -1,0 +1,15 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (testDemo.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  The vcpkg manifest was disabled, but we found a manifest file in D:\Programming\Battleship\Game\testDemo\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+  MyForm.cpp
+D:\Programming\Battleship\Game\testDemo\MyForm.h(7,1): warning C4005: 'CURL_STATICLIB': macro redefinition
+  (compiling source file 'MyForm.cpp')
+  D:\Programming\Battleship\Game\testDemo\MyForm.h(7,1):
+  'CURL_STATICLIB' previously declared on the command line
+  
+D:\Programming\Battleship\Game\testDemo\MyForm.h(220,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'MyForm.cpp')
+  
+  Form2.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  testDemo.vcxproj -> D:\Programming\Battleship\Game\testDemo\x64\Debug\HTTPTestDemo.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

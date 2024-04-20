@@ -1,0 +1,3 @@
+Checking patch CMake/FindMbedTLS.cmake...
+Hunk #1 succeeded at 28 (offset 2 lines).
+Applied patch CMake/FindMbedTLS.cmake cleanly.
