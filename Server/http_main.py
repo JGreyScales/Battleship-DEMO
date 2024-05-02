@@ -2,7 +2,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from serverHelper import ServerHelper
 from GameHelper import GameHelper
-import json
+import json, sys
 
 
 
@@ -24,10 +24,19 @@ class httpServ(BaseHTTPRequestHandler):
     def do_GET(self) -> None:  
         returnData = httpServ.basicProcess(self, False)
 
-        json_data = {'parsedData': True}
-        json_to_pass = json.dumps(json_data)
-        self.wfile.write(json_to_pass.encode('utf-8'))
-  
+        if returnData[0] == 200:
+            content = returnData[1]
+            self.protocol_version = 'HTTP/1.1'
+            self.send_response(200)
+            self.send_header(keyword="Content-type", value="text/html")
+            self.send_header("Content-length", sys.getsizeof(content))
+            self.end_headers()
+            self.wfile.write(bytes(content, "utf-8"))
+        else:
+            json_data = {'parsedData': True}
+            json_to_pass = json.dumps(json_data)
+            self.wfile.write(json_to_pass.encode('utf-8'))
+    
     def do_POST(self) -> None:
         returnData = httpServ.basicProcess(self, True)
         if returnData[0]:

@@ -214,7 +214,6 @@ namespace bootPage {
 		return pin;
 	}
 
-
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 		// on Loadup assume the player will initiate the game and generate the pin
 		srand(time(NULL));
@@ -231,6 +230,7 @@ namespace bootPage {
 	}
 
 	private: System::Void play_Click(System::Object^ sender, System::EventArgs^ e) {
+
 		//begin launching the game
 		//insure all the proper information is filled in
 		if (username->Text != "" && gamePin->Text != "") {
@@ -239,14 +239,24 @@ namespace bootPage {
 			CURLcode res;
 
 			curl = curl_easy_init();
+
 			// check to see if the user wishes to initiate the game
 			if (createGameBool->Checked) {
 
 				System::String^ querytest = "http://localhost:8008/game?username=" + username->Text + "&gamePin=" + gamePin->Text + "&Hosted=" + createGameBool->Checked + "&userID=" +UserID->Text;
-
 				curl_easy_setopt(curl, CURLOPT_URL, querytest);
+
+
 				res = curl_easy_perform(curl);
-				std::cout << res;
+				if (res == CURLE_OK) {
+					long response_code;
+					curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &response_code);
+					string demo;
+					if (response_code == 200) {
+						exit(1);
+					}
+				}
+
 			}
 			else {
 

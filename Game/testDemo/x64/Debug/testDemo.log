@@ -6,10 +6,15 @@ D:\Programming\Battleship\Game\testDemo\MyForm.h(7,1): warning C4005: 'CURL_STAT
   D:\Programming\Battleship\Game\testDemo\MyForm.h(7,1):
   'CURL_STATICLIB' previously declared on the command line
   
-D:\Programming\Battleship\Game\testDemo\MyForm.h(220,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Programming\Battleship\Game\testDemo\MyForm.h(219,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   (compiling source file 'MyForm.cpp')
   
-  Form2.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  testDemo.vcxproj -> D:\Programming\Battleship\Game\testDemo\x64\Debug\HTTPTestDemo.exe
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
+D:\Programming\Battleship\Game\testDemo\MyForm.h(254,6): error C2065: 'string': undeclared identifier
+  (compiling source file 'MyForm.cpp')
+  
+D:\Programming\Battleship\Game\testDemo\MyForm.h(254,13): error C2146: syntax error: missing ';' before identifier 'demo'
+  (compiling source file 'MyForm.cpp')
+  
+D:\Programming\Battleship\Game\testDemo\MyForm.h(254,13): error C2065: 'demo': undeclared identifier
+  (compiling source file 'MyForm.cpp')
+  
