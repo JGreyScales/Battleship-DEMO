@@ -1,8 +1,0 @@
-D:\Programming\Battleship\Game\testDemo\x64\Debug\testDemo.vcxproj.AssemblyReference.cache
-D:\Programming\Battleship\Game\testDemo\x64\Debug\testDemo.MyForm.resources
-D:\Programming\Battleship\Game\testDemo\x64\Debug\testDemo.vcxproj.GenerateResource.cache
-D:\Programming\Battleship\Game\testDemo\x64\Debug\testDemo.Form2.resources
-D:\Programming\Battleship\Game\testDemo\x64\Debug\testDemo.vcxproj.CopyComplete
-D:\Programming\Battleship\Game\testDemo\x64\Debug\libcurl-d.dll
-D:\Programming\Battleship\Game\testDemo\x64\Debug\zlibd1.dll
-D:\Programming\Battleship\Game\testDemo\x64\Debug\HTTPTestDemo.exe
